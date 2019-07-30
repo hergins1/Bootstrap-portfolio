@@ -1,110 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-
-  <style>   
-
-    .navbar {
-        background-color: white;
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid gray;
-        border-bottom-width: 2px; 
-    }
-    
-
-    .navbar-brand{
-        box-sizing: border-box;
-        height: 90px;
-        width: 250px;
-        background-color: #4aaaa5;
-        text-align: center;
-        font-size: 30px;
-        float: left;
-        font-weight: 700;
-        line-height: 80px;
-        color: #ffffff;
-        text-decoration: none;
-        font-family: Georgia, 'Times New Roman', Times, serif
-    }
-    .container{
-        background-color: #ffffff;
-    }
-
-    body {
-        padding-top: 20px;
-        background-image: url("http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-1.jpg");
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 34px;
-    }
-
-    .About-Me{
-        padding-bottom: 10px;
-        padding-top:20px;
-        border-bottom: 3px solid #999;
-        margin: 0px;
-    }
-
-    .Main-content{
-        padding: 20px;
-    }
-
-
-  </style>
-
+    <title>Erik Hergins Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
-<body style="height:900px">
-        
-    <nav class="navbar navbar-fixed-top ">
-    <div class="container-fluid">
-    <div class="navbar-logo">
-      <span class="navbar-brand">
-          Erik Hergins
-      </span> 
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="./index.html">About Me</a></li> 
-      <li><a href="./contact.html">Contact</a></li> 
-      <li><a href="./portfolio.html">Portfolio</a></li>
-    </ul>   
-    </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo">Erik Hergins</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Page Select
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                    <a class="dropdown-item" href="index.html">About Me</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 About-Me">
-                <h1>About Me</h1>
+    <main class="container">
+        <section class="row">
+            <div class="col-md-8">
+                <article class="block">
+                    <h1 class="block-header">About Me</h1>
+                    <hr />
+                    <img src="assets/images/family.jpg" alt="" id="about-image" />
+                    <p>Full stack developer. Recenetly graduated from KU Coding Bootcamp. Excited to move forward into the world of development!</p>
+                    <br />
+                    <p>Father of a beautiful daughter with another on the way. Family and friends are a huge part of my life! 
+                    </p>
+                </article>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-3 Main-content">
-                <img class="" src="http://placehold.it/150x150" alt="">
-            </div>
-            <div class="col-9">   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquid reiciendis eaque harum voluptatibus similique ipsum porro fuga magni rem ut earum quasi, quam natus ab officia praesentium. Non, sapiente!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquid reiciendis eaque harum voluptatibus similique ipsum porro fuga magni rem ut earum quasi, quam natus ab officia praesentium. Non, sapiente!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquid reiciendis eaque harum voluptatibus similique ipsum porro fuga magni rem ut earum quasi, quam natus ab officia praesentium. Non, sapiente!</p>
-            </div>    
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <footer class="page-footer font small fixed-bottom">
-            <div class="footer-copyright text-center py-3">© 2019 Copyright</div>  
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright Erik Hergins
+        </p>
     </footer>
-        
 
-    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
